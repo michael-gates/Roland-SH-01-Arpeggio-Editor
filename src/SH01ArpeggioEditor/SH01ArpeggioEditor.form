@@ -414,10 +414,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField1">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton1">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel1">
@@ -510,10 +514,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField2">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton2">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel2">
@@ -606,10 +614,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField3">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton3">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel3">
@@ -702,10 +714,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField4">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton4">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel4">
@@ -798,10 +814,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField5">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton5">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel5">
@@ -894,10 +914,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField6">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton6">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel6">
@@ -990,10 +1014,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField7">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton7">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel7">
@@ -1086,10 +1114,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField8">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton8">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel8">
@@ -1182,10 +1214,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField9">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton9">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel9">
@@ -1278,10 +1314,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField10">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton10">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel10">
@@ -1374,10 +1414,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField11">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton11">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel11">
@@ -1470,10 +1514,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField12">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton12">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel12">
@@ -1566,10 +1614,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField13">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton13">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel13">
@@ -1662,10 +1714,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField14">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton14">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel14">
@@ -1758,10 +1814,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField15">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton15">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel15">
@@ -1854,10 +1914,14 @@
                       </Layout>
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="originalNoteInputField16">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="originalNoteInputField" noResource="true"/>
+                          </Properties>
                         </Component>
                         <Component class="javax.swing.JButton" name="originalNoteInputButton16">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="Set"/>
+                            <Property name="name" type="java.lang.String" value="setOriginalNoteButton" noResource="true"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="originalNoteLabel16">

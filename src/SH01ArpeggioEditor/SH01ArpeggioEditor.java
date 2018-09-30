@@ -8,6 +8,8 @@ package SH01ArpeggioEditor;
 import static SH01ArpeggioEditor.SH01Util.*;
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Hashtable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -15,10 +17,12 @@ import javax.sound.midi.MidiDevice;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.MidiUnavailableException;
 import javax.swing.BoxLayout;
+import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
+import javax.swing.JTextField;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -93,13 +97,46 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
     }
     
     
+    private static Component getComponentByName(Component root, String name) {
+        for(Component c : ((Container)root).getComponents()) {
+            Component c2 = getComponentByName(c, name);
+            if(c2 != null)
+                return c2;
+            
+            if(c.getName() == name)
+                return c;
+        }
+        
+        return null;
+    }
 
     private void initPatternTabs() {
         int tabIndex = 1;
 
         
         for(Component p : arpeggioPatternTabbedPane.getComponents()) {
-            JPanel curTab = (JPanel) ((Container)p).getComponent(1);
+            
+            // Get the top panel for this tab.
+            JPanel curTopPanel = (JPanel) ((Container)p).getComponent(0);
+            JTextField inputField = (JTextField) getComponentByName(curTopPanel, "originalNoteInputField");
+            JButton button = (JButton) getComponentByName(curTopPanel, "setOriginalNoteButton");
+            
+            final int curTabIndex = tabIndex;
+            
+            button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent evt) {
+//                    logger.log(Level.INFO, "testing...");
+                    arp.setPatternOriginalNote(curTabIndex, Integer.parseInt(inputField.getText()));
+                }
+            });
+            
+            
+            
+            // Get the step editing panel for this tab, i.e. the panel to which we want to put our sliders
+            JPanel curStepPanel = (JPanel) ((Container)p).getComponent(1);
+            
+            // Create sliders with change listeners and add them to the current step editing panel
             for(int stepIndex = 1; stepIndex <= 32; stepIndex++) {
                 JSlider slider = new JSlider();
                 slider.setOrientation(JSlider.VERTICAL);
@@ -111,24 +148,21 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
                 stepPanel.add(new JLabel("S" + Integer.toString(stepIndex), JLabel.CENTER));
                 stepPanel.add(slider);
                 
-                
-                
                 JLabel valueIndicator = new JLabel("1");
-                stepPanel.add(valueIndicator);
-                
+                stepPanel.add(valueIndicator); 
 
                 final int curPatIndex = tabIndex;
                 final int curStepIndex = stepIndex;
-              
+                
+                // Do the appropriate changes when slider is moved
                 slider.addChangeListener(new ChangeListener() {
                     public void stateChanged(ChangeEvent e) {
-
                         valueIndicator.setText(Integer.toString(slider.getValue()));
                         arp.setPatternStep(curPatIndex, curStepIndex, slider.getValue());
                     }
                 });
                 
-                curTab.add(stepPanel);
+                curStepPanel.add(stepPanel);
             }
             
             tabIndex++;
@@ -460,7 +494,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel1.setName("topPanel"); // NOI18N
 
+        originalNoteInputField1.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton1.setText("Set");
+        originalNoteInputButton1.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel1.setText("Original note (0 - 128)");
 
@@ -518,7 +555,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel2.setName("topPanel"); // NOI18N
 
+        originalNoteInputField2.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton2.setText("Set");
+        originalNoteInputButton2.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel2.setText("Original note (0 - 128)");
 
@@ -574,7 +614,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel3.setName("topPanel"); // NOI18N
 
+        originalNoteInputField3.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton3.setText("Set");
+        originalNoteInputButton3.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel3.setText("Original note (0 - 128)");
 
@@ -630,7 +673,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel4.setName("topPanel"); // NOI18N
 
+        originalNoteInputField4.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton4.setText("Set");
+        originalNoteInputButton4.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel4.setText("Original note (0 - 128)");
 
@@ -686,7 +732,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel5.setName("topPanel"); // NOI18N
 
+        originalNoteInputField5.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton5.setText("Set");
+        originalNoteInputButton5.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel5.setText("Original note (0 - 128)");
 
@@ -742,7 +791,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel6.setName("topPanel"); // NOI18N
 
+        originalNoteInputField6.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton6.setText("Set");
+        originalNoteInputButton6.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel6.setText("Original note (0 - 128)");
 
@@ -798,7 +850,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel7.setName("topPanel"); // NOI18N
 
+        originalNoteInputField7.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton7.setText("Set");
+        originalNoteInputButton7.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel7.setText("Original note (0 - 128)");
 
@@ -854,7 +909,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel8.setName("topPanel"); // NOI18N
 
+        originalNoteInputField8.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton8.setText("Set");
+        originalNoteInputButton8.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel8.setText("Original note (0 - 128)");
 
@@ -910,7 +968,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel9.setName("topPanel"); // NOI18N
 
+        originalNoteInputField9.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton9.setText("Set");
+        originalNoteInputButton9.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel9.setText("Original note (0 - 128)");
 
@@ -966,7 +1027,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel10.setName("topPanel"); // NOI18N
 
+        originalNoteInputField10.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton10.setText("Set");
+        originalNoteInputButton10.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel10.setText("Original note (0 - 128)");
 
@@ -1022,7 +1086,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel11.setName("topPanel"); // NOI18N
 
+        originalNoteInputField11.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton11.setText("Set");
+        originalNoteInputButton11.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel11.setText("Original note (0 - 128)");
 
@@ -1078,7 +1145,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel12.setName("topPanel"); // NOI18N
 
+        originalNoteInputField12.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton12.setText("Set");
+        originalNoteInputButton12.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel12.setText("Original note (0 - 128)");
 
@@ -1134,7 +1204,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel13.setName("topPanel"); // NOI18N
 
+        originalNoteInputField13.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton13.setText("Set");
+        originalNoteInputButton13.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel13.setText("Original note (0 - 128)");
 
@@ -1190,7 +1263,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel14.setName("topPanel"); // NOI18N
 
+        originalNoteInputField14.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton14.setText("Set");
+        originalNoteInputButton14.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel14.setText("Original note (0 - 128)");
 
@@ -1246,7 +1322,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel15.setName("topPanel"); // NOI18N
 
+        originalNoteInputField15.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton15.setText("Set");
+        originalNoteInputButton15.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel15.setText("Original note (0 - 128)");
 
@@ -1302,7 +1381,10 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         topPanel16.setName("topPanel"); // NOI18N
 
+        originalNoteInputField16.setName("originalNoteInputField"); // NOI18N
+
         originalNoteInputButton16.setText("Set");
+        originalNoteInputButton16.setName("setOriginalNoteButton"); // NOI18N
 
         originalNoteLabel16.setText("Original note (0 - 128)");
 

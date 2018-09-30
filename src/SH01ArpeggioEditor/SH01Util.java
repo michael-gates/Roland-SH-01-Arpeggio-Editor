@@ -128,9 +128,9 @@ public class SH01Util {
         if(step < 1 || step > 32)
             logger.log(Level.WARNING, "{0} is not valid for <step>", Integer.toString(step));
         if(pat < 1 || pat > 16)
-            logger.log(Level.WARNING, "{0} is not valid for <note>", Integer.toString(pat));
-        if(pat < 0 || value > 128)
-            logger.log(Level.WARNING, "{0} is not valid for <value>", Integer.toString(pat));
+            logger.log(Level.WARNING, "{0} is not valid for <pat>", Integer.toString(pat));
+        if(value < 0 || value > 128)
+            logger.log(Level.WARNING, "{0} is not valid for <value>", Integer.toString(value));
         
         
         int lhs = (value & 0xf0) >> 4;
@@ -146,8 +146,8 @@ public class SH01Util {
     public static void arpSetPatternOriginalNote(int pat, int value, MidiDevice device) {
         if(pat < 1 || pat > 16)
             logger.log(Level.WARNING, "{0} is not valid for <note>", Integer.toString(pat));
-        if(pat < 0 || value > 128)
-            logger.log(Level.WARNING, "{0} is not valid for <value>", Integer.toString(pat));
+        if(value < 0 || value > 128)
+            logger.log(Level.WARNING, "{0} is not valid for <value>", Integer.toString(value));
         
         int lhs = (value & 0xf0) >> 4;
         int rhs = value & 0x0f;
