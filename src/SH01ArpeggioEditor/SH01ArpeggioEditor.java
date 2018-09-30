@@ -371,63 +371,48 @@ public class SH01ArpeggioEditor extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Patch Arpeggio Common", arpeggioCommonPanel);
 
-        patternPanel1.setMaximumSize(null);
         patternPanel1.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("1", patternPanel1);
 
-        patternPanel2.setMaximumSize(null);
         patternPanel2.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("2", patternPanel2);
 
-        patternPanel3.setMaximumSize(null);
         patternPanel3.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("3", patternPanel3);
 
-        patternPanel4.setMaximumSize(null);
         patternPanel4.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("4", patternPanel4);
 
-        patternPanel5.setMaximumSize(null);
         patternPanel5.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("5", patternPanel5);
 
-        patternPanel6.setMaximumSize(null);
         patternPanel6.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("6", patternPanel6);
 
-        patternPanel7.setMaximumSize(null);
         patternPanel7.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("7", patternPanel7);
 
-        patternPanel8.setMaximumSize(null);
         patternPanel8.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("8", patternPanel8);
 
-        patternPanel9.setMaximumSize(null);
         patternPanel9.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("9", patternPanel9);
 
-        patternPanel10.setMaximumSize(null);
         patternPanel10.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("10", patternPanel10);
 
-        patternPanel11.setMaximumSize(null);
         patternPanel11.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("11", patternPanel11);
 
-        patternPanel12.setMaximumSize(null);
         patternPanel12.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("12", patternPanel12);
 
-        patternPanel13.setMaximumSize(null);
         patternPanel13.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("13", patternPanel13);
 
-        patternPanel14.setMaximumSize(null);
         patternPanel14.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("14", patternPanel14);
 
-        patternPanel15.setMaximumSize(null);
         patternPanel15.setLayout(new java.awt.GridLayout(2, 16, 0, 32));
         arpeggioPatternTabbedPane.addTab("15", patternPanel15);
 
