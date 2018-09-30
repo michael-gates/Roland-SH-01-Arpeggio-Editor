@@ -16,10 +16,8 @@ import java.util.logging.Logger;
  */
 public class SH01Arpeggiator {
     private static final Logger LOGGER = Logger.getLogger(SH01ArpeggioEditor.class.getName());
-    private MidiDevice device = null;
+    private MidiDevice device;
 
-    public SH01Arpeggiator() {
-    }
 
     
     public SH01Arpeggiator(MidiDevice dev){
@@ -28,48 +26,39 @@ public class SH01Arpeggiator {
     
     
     public void setGrid(int grid) {
-        if(device != null)
-            arpSetGrid(grid, device);
+        arpSetGrid(grid, device);
     }
     
     public void setDuration(int duration) {
-        if(device != null)
-            arpSetDuration(duration, device);
+        arpSetDuration(duration, device);
     }
     
     public void setMotif(int motif) {
-        if(device != null)
-            arpSetMotif(motif, device);
+        arpSetMotif(motif, device);
     }
     
     public void setOctaveRange(int octaveRange) {
-        if(device != null)
-            arpSetOctaveRange(octaveRange, device);
+        arpSetOctaveRange(octaveRange, device);
     }
     
     public void setAccentRate(int accentRate) {
-        if(device != null)
-            arpSetAccentRate(accentRate, device);
+        arpSetAccentRate(accentRate, device);
     }
     
     public void setVelocity(int velocity) {
-        if(device != null)
-            arpSetVelocity(velocity, device);
+        arpSetVelocity(velocity, device);
     }
     
     public void setEndStep(int endStep) {
-        if(device != null)
-            arpSetEndStep(endStep, device);
+        arpSetEndStep(endStep, device);
     }
     
     public void setPatternStep(int pat, int step, int value) {
-        if(device != null)
-            arpSetPatternStep(pat, step, value, device);
+        arpSetPatternStep(pat, step, value, device);
     }
     
     public void setPatternOriginalNote(int pat, int value) {
-        if(device != null)
-            arpSetPatternOriginalNote(pat, value, device);
+        arpSetPatternOriginalNote(pat, value, device);
     }
     
     public final void setMidiDevice(MidiDevice dev) {
